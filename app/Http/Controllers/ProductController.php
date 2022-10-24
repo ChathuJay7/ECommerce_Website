@@ -109,4 +109,12 @@ class ProductController extends Controller
          return view('myorders',['orders'=>$orders]);
     }
 
+    function search(Request $req)
+    {
+        $data= Product::
+        where('name', 'like', '%'.$req->input('query').'%')
+        ->get();
+        return view('search',['products'=>$data]);
+    }
+
 }
