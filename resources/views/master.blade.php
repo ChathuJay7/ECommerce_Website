@@ -54,5 +54,11 @@
         margin-bottom: 20px;
         padding-bottom: 20px;
     }
+    .cart-list-item{
+        align-items: center;
+        margin: auto;
+        justify-content: center;
+    }
+
 </style>
 </html>
